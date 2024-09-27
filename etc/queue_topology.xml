@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/topology.xsd">
+    <exchange name="cloneble-translator-exchange" type="topic" connection="db">
+        <binding id="ClonebleTranslatorProduct" topic="cloneble.translator.product.queue" destinationType="queue" destination="cloneble-translator-product-queue"/>
+        <binding id="ClonebleTranslatorCategory" topic="cloneble.translator.category.queue" destinationType="queue" destination="cloneble-translator-category-queue"/>
+        <binding id="ClonebleTranslatorCms" topic="cloneble.translator.cms.queue" destinationType="queue" destination="cloneble-translator-cms-queue"/>
+    </exchange>
+</config>

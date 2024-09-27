@@ -1,0 +1,30 @@
+{
+    "name": "clonable/translator",
+    "description": "Magento 2 module for translation features",
+    "require": {
+        "php": "^7.4 || ^8.3",
+        "magento/framework": "^103.0"
+    },
+    "type": "magento2-module",
+    "version": "0.0.1",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Clonable\\Translator\\": ""
+        }
+    },
+    "extra": {
+        "map": [
+            [
+                "*",
+                "Clonable/Translator"
+            ]
+        ]
+    }
+}

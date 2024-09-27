@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/consumer.xsd">
+    <consumer name="cloneble.translator.product.consumer" queue="cloneble-translator-product-queue" connection="db"
+              consumerInstance="Cloneble\Translator\Model\Queue\Consumer\Product"
+              maxMessages="10000"/>
+    <consumer name="cloneble.translator.category.consumer" queue="cloneble-translator-category-queue" connection="db"
+              consumerInstance="Cloneble\Translator\Model\Queue\Consumer\Category"
+              maxMessages="10000"/>
+    <consumer name="cloneble.translator.cms.consumer" queue="cloneble-translator-cms-queue" connection="db"
+              consumerInstance="Cloneble\Translator\Model\Queue\Consumer\Cms"
+              maxMessages="10000"/>
+</config>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Communication/etc/communication.xsd">
+    <topic name="cloneble.translator.product.queue" request="string"/>
+    <topic name="cloneble.translator.category.queue" request="string"/>
+    <topic name="cloneble.translator.cms.queue" request="string"/>
+</config>

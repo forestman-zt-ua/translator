@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="catalog_product_save_after">
+        <observer name="cloneble_translate_product_observer" instance="Cloneble\Translator\Observer\ProductAfterSaveObserver"/>
+    </event>
+    <event name="cms_page_save_after">
+        <observer name="cloneble_translator_translate_cms_observer" instance="Cloneble\Translator\Observer\CmsAfterSaveObserver"/>
+    </event>
+    <event name="catalog_category_save_after">
+        <observer name="cloneble_translator_translate_category_observer" instance="Cloneble\Translator\Observer\CategoryAfterSaveObserver"/>
+    </event>
+    <event name="catalog_product_import_bunch_save_after">
+        <observer name="after_import_products_observer" instance="Cloneble\Translator\Observer\AfterImportProductsObserver" />
+    </event>
+</config>

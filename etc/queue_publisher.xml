@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/publisher.xsd">
+    <publisher topic="cloneble.translator.product.queue"><connection name="db" exchange="cloneble-translator-exchange"/></publisher>
+    <publisher topic="cloneble.translator.category.queue"><connection name="db" exchange="cloneble-translator-exchange"/></publisher>
+    <publisher topic="cloneble.translator.cms.queue"><connection name="db" exchange="cloneble-translator-exchange"/></publisher>
+</config>
